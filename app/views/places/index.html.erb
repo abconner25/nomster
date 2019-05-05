@@ -19,6 +19,12 @@
         </blockquote>
       </div>
     <% end %>
+
+    <%if place.photos.present? %>
+      <div class= "col-12">
+        <%= image_tag place.photos.last.picture.url %>
+      </div>
+    <% end %>
   </div>
 
 <% end %>
