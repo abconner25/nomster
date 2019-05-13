@@ -54,6 +54,7 @@
         <h4 class="modal-title" id="myPhotoModalLabel">Add a Photo</h4>
       </div>
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+        <div class="modal-body">
           <%= f.input :picture %>
           <%= f.input :caption %>
 
@@ -104,13 +105,18 @@
 <div class= "clear"></div>
 <div class= "booyah-box">
   <% @place.photos.each do |photo| %>
-    <div>
+    <div class="place-img float-left">
       <%= image_tag photo.picture.url %>
       <br />
-      <%= photo.caption %>
+      <div class= "photo-caption">
+        <%= photo.caption %>
+    </div>
     </div>
   <% end %>
+  <div class= "clear"></div>
 </div>
+
+
 
 <div class= "col-10 offset-1"></div>
   <h1 class= "float-left">Comments</h1>

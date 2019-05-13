@@ -88,3 +88,25 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.place-img img {
+  
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-caption {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+
+}
